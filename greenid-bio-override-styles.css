@@ -1,0 +1,472 @@
+@import url(https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;1,6..72,300&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap);
+
+body {
+    margin: 7px;
+    /*background: #f2f2f2;*/
+}
+#greenid-hosted-logo {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 24px;
+}
+#greenid-hosted-logo img {
+    height: auto !important;
+    width: 80px !important;
+}
+.greenid-so-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#greenid-hosted-powered-by-gbg {
+    padding-top: 20px;
+}
+
+#greenid-container {
+    /*background: #f2f2f2;*/
+}
+#greenid-container #greenid-intro-content h1,
+#greenid-so-content-finish #greenid-container h1,
+.greenid-so-content #greenid-container h1 strong,
+.greenid-so-content #greenid-container h1
+{
+    /*font-family: Newsreader, serif ;*/
+	font-family: "Roboto", Helvetica, sans-serif;
+    color: #00072d;
+}
+
+#greenid-container #greenid-intro-content h1,
+.greenid-so-content #greenid-container h1 strong,
+.greenid-so-content #greenid-container h1
+{
+    font-size: 48px;
+    line-height: 67px;
+}
+.greenid-so-content #greenid-container h2
+{
+    font-size: 35px;
+}
+
+.greenid-so-content #greenid-container h1 strong
+{
+    font-weight: 500;
+}
+.greenid-so-content #greenid-container h2,.greenid-so-content #greenid-container h3,.greenid-so-content #greenid-container h4,.greenid-so-content #greenid-container h4 {
+    font-family: "Roboto", Helvetica, sans-serif;
+    line-height: 24px;
+}
+.greenid-so-content #greenid-container h2 {
+    font-size: 32px;
+}
+#greenid-container,
+.greenid-so-content #greenid-container .greenid-so-content-dropcap,
+.greenid-so-content #greenid-container strong,
+.greenid-so-content #greenid-container .checkbox.greenid-consent-font label,
+.greenid-so-content #greenid-container .greenid-so-content-agree-label
+{
+    font-family: "Roboto", Helvetica, sans-serif;
+	/*line-height: 24px;*/
+
+}
+
+.greenid-so-content #greenid-container strong
+{
+    font-weight: 500;
+}
+
+#greenid-biometric-content [wsdk-container] *
+{
+    font-family: "Roboto", Helvetica, sans-serif !important;
+}
+
+.greenid-so-content #greenid-container .btn
+{
+    font-family: "Roboto", Helvetica, sans-serif;
+}
+
+.greenid-so-content #greenid-container .btn-primary:hover,
+.greenid-so-content #greenid-container[data-eq-state~="xsmall"] .btn-primary:hover,
+#greenid-biometric-content .greenid-so-content #greenid-container #webscanRoot .button.button--primary:hover {
+    /*
+	background-color: #010034;
+    border-color: #010034
+	*/
+	background-color: #5050FF;
+    border-color: #00072d;
+	
+}
+
+.greenid-so-content #greenid-container .btn-primary,
+.greenid-so-content #greenid-container[data-eq-state~="xsmall"] .btn-primary,
+#greenid-biometric-content .greenid-so-content #greenid-container #webscanRoot .button.button--primary
+{
+    align-items: center;
+    background-color: #5050FF;
+    border-radius: 5px;
+    /*border-style: solid;
+    border-width: 1px;*/
+    color: #00072d;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: center;
+    line-height: 24px;
+    padding: 11px 50px 11px 32px;
+}
+#greenid-container .input-group .form-control:last-child {
+    border-radius: 8px !important;
+}
+.greenid-so-content #greenid-container p {
+    line-height: 24px;
+}
+
+.greenid-so-content #greenid-container .btn-next {
+    background-size: 40px 25px;
+}
+
+.greenid-so-content #greenid-container label
+{
+    font-weight: 300;
+    font-family:  "Roboto", Helvetica, sans-serif;
+}
+
+.greenid-so-content #greenid-container .greenid-so-content-nav {
+    position: relative;
+    min-height: 20px;
+    margin-top: -5px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+/*
+.greenid-so-content #greenid-container select, .greenid-so-content #greenid-container .select2-selection {
+    background: #fff !important;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    height: 45px;
+    padding: 0 10px;
+    font-family: 'Roboto';
+    margin-top: 13px;
+    color: #00072d;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.greenid-so-content #greenid-container input[type='text'], .greenid-so-content #greenid-container input[type='number'], .greenid-so-content #greenid-container input[type='date'], .greenid-so-content #greenid-container input[type='tel'], .greenid-so-content #greenid-container input[type='email'], .greenid-so-content #greenid-container input[type='password'], .greenid-so-content #greenid-container input[type='datetime'], .greenid-so-content #greenid-container input[type='month'], .greenid-so-content #greenid-container .greenid-form-input-static {
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    height: 45px;
+    padding: 0 10px;
+    font-family: 'Roboto';
+    margin-top: 13px;
+    color: #00072d;
+    font-size: 1rem;
+    font-weight: 300;
+}
+*/
+#greenid-container #greenid-option-list-toggle {
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    height: 50px;
+    padding: 0 10px;
+    font-family: 'Roboto';
+    margin-top: 13px;
+    color: #00072d;
+    font-size: 1rem;
+    font-weight: 300;
+}
+#greenid-container .input-group.date {
+    margin-top: 13px;
+}
+#greenid-container .input-group.date input {
+    margin-top: 0;
+}
+
+.greenid-so-content #greenid-container .input-group-addon.greenid-datepicker {
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.greenid-so-content #greenid-container .greenid-form-input-static, .greenid-so-content #greenid-container .select2-selection__placeholder {
+    line-height: 64px;
+}
+
+.greenid-so-content #greenid-container .select2-selection__arrow {
+    top: 23px;
+}
+.greenid-so-content #greenid-container .select2-selection__rendered {
+    line-height: 64px;
+}
+.greenid-tooltip,
+.greenid-modal
+{
+    font-family:  "Roboto", Helvetica, sans-serif;
+}
+.greenid-so-content #greenid-container #greenid-source-content {
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid #bfbfbf;
+    background-color: #fff !important;
+}
+.greenid-so-content #greenid-container .greenid-modal .btn-default, .greenid-so-content #greenid-container #greenid-source-content #greenid-source-cancel.btn-default {
+    background-color: #fff;
+    border-color: #00072d;
+    padding: 11px 32px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    line-height: 24px;
+    color: #00072d;
+}
+.greenid-so-content #greenid-container .greenid-modal .btn-default:hover, .greenid-so-content #greenid-container #greenid-source-content #greenid-source-cancel.btn-default:hover {
+    background-color: #5050FF;
+    border-color: #00072d;
+}
+
+.well {
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid #bfbfbf;
+    background-color: #fff !important;
+}
+#greenid-container .modal-footer .greenid-modal-close {
+    align-items: center;
+    background-color: #00072d;
+    border-radius: 24px;
+    border-style: solid;
+    border-width: 1px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: center;
+    line-height: 24px;
+    padding: 11px 32px;
+}
+#greenid-container a:hover,
+.greenid-so-content #greenid-container .checkbox label.consent a:hover {
+   color: #164a9a;
+   font-weight: 400;
+}
+#greenid-container a {
+  color: #164a9a;
+  font-weight: 400;
+}
+#greenid-container a:visited {
+    color: #164a9a;
+    font-weight: 400;
+}
+
+#register-form-mode h1 {
+  text-indent:-9999px;
+}
+#register-form-mode h1:before {
+  text-indent:0;
+  content:'Verify your age';
+  float:left;
+}
+#greenid-intro-content h1 {
+  text-indent:-9999px;
+}
+#greenid-intro-content h1:before {
+  text-indent:0;
+  content:'Verify your age';
+  float:left;
+}
+
+/*biometrics page styles*/
+#greenid-biometric-content {
+    margin: 10px;
+}
+#greenid-biometric-content .greenid-so-content #greenid-container #webscanRoot .dark-inner-provider-container {
+    max-width: 100%;
+    margin: 2px 0;
+}
+#greenid-biometric-content [wsdk-container] .dark-inner-provider-container {
+    max-height: 100%;
+}
+#greenid-biometric-content [wsdk-container] .dark-inner-provider-container {
+    color: #00072d;
+    background-color: transparent;
+    padding: 8px;
+}
+#greenid-biometric-content [wsdk-container] .light-inner-provider-container, #greenid-biometric-content [wsdk-container] .dark-inner-provider-container {
+    flex-grow: 50;
+    min-height: 100%;
+    display: flex
+;
+    flex-direction: column;
+}
+#greenid-biometric-content [wsdk-container] * {
+    font-family: "Roboto", Helvetica, sans-serif !important;
+}
+#greenid-biometric-content [wsdk-container] * {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+#greenid-biometric-content [wsdk-container] * {
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+    box-sizing: border-box;
+}
+#greenid-biometric-content [wsdk-container] * {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+}
+#greenid-biometric-content [wsdk-container] .control--switch.manual--mode--switch > .control__switch {
+    background-color: #F88618;
+    border-color: #00072d;
+}
+#greenid-biometric-content [wsdk-container] .control--switch.manual--mode--switch > input:checked + .control__switch {
+    background-color: #F88618;
+}
+#greenid-biometric-content [wsdk-container] .help-button-container > svg {
+    margin-bottom: 2px;
+    background-color: #F88618;
+    border-radius: 14px;
+}
+#greenid-biometric-content [wsdk-container] .control, #greenid-biometric-content [wsdk-container] .control--select {
+    padding: 10px;
+    font-size: 14px;
+    border-color: #00072d;
+    background-color: #000D1A;
+    color: #00072d;
+    margin-top: 0px;
+}
+#greenid-biometric-content [wsdk-container] .control, #greenid-biometric-content [wsdk-container] .control--select {
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #444b53;
+    border-radius: 3px;
+    display: flex;
+    padding: 10px;
+    transition: box-shadow 0.2s ease;
+}
+#greenid-biometric-content [wsdk-container] .control--switch.manual--mode--switch {
+    background-color: transparent;
+    padding-bottom: 6px;
+    padding-left: 0px;
+	border: 0px solid #444b53;
+}
+#greenid-biometric-content [wsdk-container] select {
+    display: block;
+    width: 100%;
+    height: 44px;
+    padding: 8px;
+}
+
+#greenid-biometric-content .greenid-so-content #greenid-container #webscanRoot .camera-capture--button {
+    border-color: #5050FF;
+	border-width: 2px;
+    margin: 2px;
+    border-style: solid;
+}
+
+#greenid-biometric-content [wsdk-container] .camera-capture--button {
+    background-color: #00072d;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+}
+@media (max-width: 414px) {
+    
+	#greenid-hosted-logo img {
+		max-height: 95px;
+		height: 95px;
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 390px) and (max-width: 430px) {
+	#greenid-hosted-logo {
+		max-width: 1280px;
+		margin: 0 auto;
+		padding: 12px;
+	}
+	/*#greenid-hosted-logo img {
+		height: 95px;
+		width: 100%;
+	}*/
+	#greenid-hosted-logo img {
+		height: auto !important;
+		width: 80px !important;
+	}
+}
+@media only screen and (min-width: 430px) and (max-width: 480px) {
+ 
+	#greenid-hosted-logo {
+		max-width: 1280px;
+		margin: 0 auto;
+		padding: 12px;
+	}
+	/*#greenid-hosted-logo img {
+		height: 110px;
+		width: 100%;
+	}*/
+	#greenid-hosted-logo img {
+		height: auto !important;
+		width: 80px !important;
+	}
+}
+@media only screen and (min-width: 390px) and (max-width: 480px) {
+	.greenid-so-content #greenid-container {
+		margin-bottom: 30px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	
+    #greenid-container #greenid-intro-content h1, 
+    .greenid-so-content #greenid-container h1 strong, 
+    .greenid-so-content #greenid-container h1 {
+        font-size: 24px;
+        line-height: 40px;
+    }
+	.greenid-so-content #greenid-container h2 {
+		font-size: 20px;
+	}
+	#greenid-container h2, #greenid-container .h2 {
+		font-size: 20px;
+	}
+	#greenid-container h3, #greenid-container .h3 {
+		font-size: 18px;
+	}
+
+	#greenid-container h4, #greenid-container .h4 {
+		font-size: 16px;
+	}
+	
+	.greenid-so-content #greenid-container .btn-cancel {
+		color: #898989;
+		background-image: url(https://simpleui-test-au.vixverify.com/df/assets/images/so-btn-cancel-icon.png);
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-size: 15px 15px;
+		background-color: white;
+		padding: 0px 0 0 23px;
+		border: none;
+		font-size: 18px;
+		margin-right: 10px;
+		line-height: 1;
+	}
+	
+	.greenid-so-content #greenid-container .btn-back {
+		color: #898989;
+		background-image: url(https://simpleui-test-au.vixverify.com/df/assets/images/so-btn-back-arrow.png);
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-size: 18px 25px;
+		background-color: white;
+		padding: 0 0 0 25px;
+		border: none;
+		font-size: 18px;
+		margin-left: 0px;
+		line-height: 1;
+	}
+	
+}
