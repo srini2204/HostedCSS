@@ -23,9 +23,6 @@ body {
     padding-top: 20px;
 }
 
-#greenid-container {
-    /*background: #f2f2f2;*/
-}
 #greenid-container #greenid-intro-content h1,
 #greenid-so-content-finish #greenid-container h1,
 .greenid-so-content #greenid-container h1 strong,
@@ -44,16 +41,12 @@ body {
     line-height: 67px;
     display: none;
 }
-.greenid-so-content #greenid-container h2
-{
-    font-size: 35px;
-}
 
 .greenid-so-content #greenid-container h1 strong
 {
     font-weight: 500;
 }
-.greenid-so-content #greenid-container h2,.greenid-so-content #greenid-container h3,.greenid-so-content #greenid-container h4,.greenid-so-content #greenid-container h4 {
+.greenid-so-content #greenid-container h2,.greenid-so-content #greenid-container h3,.greenid-so-content #greenid-container h4 {
     font-family: "Roboto", Helvetica, sans-serif;
     line-height: 24px;
 }
@@ -74,11 +67,6 @@ body {
 .greenid-so-content #greenid-container strong
 {
     font-weight: 500;
-}
-
-#greenid-biometric-content [wsdk-container] *
-{
-    font-family: "Roboto", Helvetica, sans-serif !important;
 }
 
 .greenid-so-content #greenid-container .btn
@@ -300,19 +288,10 @@ body {
     flex-direction: column;
 }
 #greenid-biometric-content [wsdk-container] * {
-    font-family: "Roboto", Helvetica, sans-serif !important;
-}
-#greenid-biometric-content [wsdk-container] * {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-}
-#greenid-biometric-content [wsdk-container] * {
     margin: 0;
     padding: 0;
-    font-family: Inter, sans-serif;
     box-sizing: border-box;
-}
-#greenid-biometric-content [wsdk-container] * {
-    font-family: Inter, sans-serif;
     font-weight: 400;
 }
 #greenid-biometric-content [wsdk-container] .control--switch.manual--mode--switch > .control__switch {
@@ -331,17 +310,14 @@ body {
     border-radius: 14px;
 }
 #greenid-biometric-content [wsdk-container] .control, #greenid-biometric-content [wsdk-container] .control--select {
-    padding: 10px;
-    font-size: 14px;
-    background-color: #000D1A;
-    color: #ffffff;
-    margin-top: 0px;
-}
-#greenid-biometric-content [wsdk-container] .control, #greenid-biometric-content [wsdk-container] .control--select {
     align-items: center;
+    background-color: #000D1A;
     border: 1px solid #444b53;
     border-radius: 3px;
+    color: #ffffff;
     display: flex;
+    font-size: 14px;
+    margin-top: 0px;
     padding: 10px;
     transition: box-shadow 0.2s ease;
 }
