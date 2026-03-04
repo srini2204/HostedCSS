@@ -33,7 +33,7 @@ body {
 {
     /*font-family: Newsreader, serif ;*/
 	font-family: "Roboto", Helvetica, sans-serif;
-    color: #00072d;
+    color: #ffffff;
 }
 
 #greenid-container #greenid-intro-content h1,
@@ -42,6 +42,7 @@ body {
 {
     font-size: 48px;
     line-height: 67px;
+    display: none;
 }
 .greenid-so-content #greenid-container h2
 {
@@ -93,7 +94,7 @@ body {
     border-color: #010034
 	*/
 	background-color: #5050FF;
-    border-color: #00072d;
+    border-color: #ffffff;
 	
 }
 
@@ -106,7 +107,7 @@ body {
     border-radius: 5px;
     /*border-style: solid;
     border-width: 1px;*/
-    color: #00072d;
+    color: #ffffff;
     cursor: pointer;
     display: inline-flex;
     font-size: 16px;
@@ -130,6 +131,7 @@ body {
 {
     font-weight: 300;
     font-family:  "Roboto", Helvetica, sans-serif;
+    margin-bottom: 0px;
 }
 
 .greenid-so-content #greenid-container .greenid-so-content-nav {
@@ -138,7 +140,7 @@ body {
     margin-top: -5px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
 }
 /*
 .greenid-so-content #greenid-container select, .greenid-so-content #greenid-container .select2-selection {
@@ -149,7 +151,7 @@ body {
     padding: 0 10px;
     font-family: 'Roboto';
     margin-top: 13px;
-    color: #00072d;
+    color: #ffffff;
     font-size: 1rem;
     font-weight: 300;
 }
@@ -161,7 +163,7 @@ body {
     padding: 0 10px;
     font-family: 'Roboto';
     margin-top: 13px;
-    color: #00072d;
+    color: #ffffff;
     font-size: 1rem;
     font-weight: 300;
 }
@@ -174,12 +176,12 @@ body {
     padding: 0 10px;
     font-family: 'Roboto';
     margin-top: 13px;
-    color: #00072d;
+    color: #ffffff;
     font-size: 1rem;
     font-weight: 300;
 }
 #greenid-container .input-group.date {
-    margin-top: 13px;
+    margin-top: 0px;
 }
 #greenid-container .input-group.date input {
     margin-top: 0;
@@ -214,17 +216,17 @@ body {
 }
 .greenid-so-content #greenid-container .greenid-modal .btn-default, .greenid-so-content #greenid-container #greenid-source-content #greenid-source-cancel.btn-default {
     background-color: #fff;
-    border-color: #00072d;
+    border-color: #ffffff;
     padding: 11px 32px;
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
     line-height: 24px;
-    color: #00072d;
+    color: #ffffff;
 }
 .greenid-so-content #greenid-container .greenid-modal .btn-default:hover, .greenid-so-content #greenid-container #greenid-source-content #greenid-source-cancel.btn-default:hover {
     background-color: #5050FF;
-    border-color: #00072d;
+    border-color: #ffffff;
 }
 
 .well {
@@ -235,7 +237,7 @@ body {
 }
 #greenid-container .modal-footer .greenid-modal-close {
     align-items: center;
-    background-color: #00072d;
+    background-color: #ffffff;
     border-radius: 24px;
     border-style: solid;
     border-width: 1px;
@@ -290,11 +292,6 @@ body {
 #greenid-biometric-content [wsdk-container] .dark-inner-provider-container {
     max-height: 100%;
 }
-#greenid-biometric-content [wsdk-container] .dark-inner-provider-container {
-    color: #00072d;
-    background-color: transparent;
-    padding: 8px;
-}
 #greenid-biometric-content [wsdk-container] .light-inner-provider-container, #greenid-biometric-content [wsdk-container] .dark-inner-provider-container {
     flex-grow: 50;
     min-height: 100%;
@@ -319,28 +316,29 @@ body {
     font-weight: 400;
 }
 #greenid-biometric-content [wsdk-container] .control--switch.manual--mode--switch > .control__switch {
-    background-color: #F88618;
-    border-color: #00072d;
+    background-color: #5050FF;
+    border-color: #ffffff;
+}
+#greenid-biometric-content [wsdk-container] .text-black {
+    color: #ffffff; 
 }
 #greenid-biometric-content [wsdk-container] .control--switch.manual--mode--switch > input:checked + .control__switch {
-    background-color: #F88618;
+    background-color: #5050FF;
 }
 #greenid-biometric-content [wsdk-container] .help-button-container > svg {
     margin-bottom: 2px;
-    background-color: #F88618;
+    background-color: #5050FF;
     border-radius: 14px;
 }
 #greenid-biometric-content [wsdk-container] .control, #greenid-biometric-content [wsdk-container] .control--select {
     padding: 10px;
     font-size: 14px;
-    border-color: #00072d;
     background-color: #000D1A;
-    color: #00072d;
+    color: #ffffff;
     margin-top: 0px;
 }
 #greenid-biometric-content [wsdk-container] .control, #greenid-biometric-content [wsdk-container] .control--select {
     align-items: center;
-    background-color: #fff;
     border: 1px solid #444b53;
     border-radius: 3px;
     display: flex;
@@ -366,9 +364,15 @@ body {
     margin: 2px;
     border-style: solid;
 }
+#greenid-biometric-content [wsdk-container] .control--switch.manual--mode--switch > input:checked + .control__switch::after {
+    background-color: #ffffff;
+}
+icon ico-checkmark-16 control__switchIcon text-black {
+    color: #ffffff;
+}
 
 #greenid-biometric-content [wsdk-container] .camera-capture--button {
-    background-color: #00072d;
+    background-color: #ffffff;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -447,7 +451,7 @@ body {
 		background-position: left center;
 		background-repeat: no-repeat;
 		background-size: 15px 15px;
-		background-color: white;
+		background-color: rgb(0, 0, 0);
 		padding: 0px 0 0 23px;
 		border: none;
 		font-size: 18px;
