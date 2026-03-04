@@ -79,46 +79,54 @@ body {
 }
 
 /* Override default fonts and colors */
-body, body * {
+#greenid-container,
+#greenid-container *,
+#greenid-biometric-content [wsdk-container],
+#greenid-biometric-content [wsdk-container] * {
     color: var(--colors-on-surface) !important;
     font-family: "Outfit", sans-serif !important;
 }
 .glyphicon {
     font-family: "Glyphicons Halflings" !important;
 }
-a, a:hover, a:focus {
+#greenid-container a,
+#greenid-container a:hover,
+#greenid-container a:focus {
     color: var(--colors-primary-hover, #004999) !important;
 }
-button.btn-primary, .btn.btn-primary, .button--primary {
+#greenid-container button.btn-primary,
+#greenid-container .btn.btn-primary,
+#greenid-container .button--primary {
     background-color: var(--colors-primary) !important;
     color: var(--colors-on-primary) !important;
     border-color: var(--colors-primary) !important;
 }
-.btn.btn-primary:hover,
-.btn.btn-primary:focus,
-.button--primary:hover,
-.button--primary:focus {
+#greenid-container .btn.btn-primary:hover,
+#greenid-container .btn.btn-primary:focus,
+#greenid-container .button--primary:hover,
+#greenid-container .button--primary:focus {
     background-color: var(--colors-primary-hover) !important;
     border-color: var(--colors-primary-hover) !important;
     color: var(--colors-on-primary) !important;
 }
-.btn.btn-secondary, .button--secondary {
+#greenid-container .btn.btn-secondary,
+#greenid-container .button--secondary {
     background-color: var(--colors-secondary) !important;
     color: var(--colors-on-secondary) !important;
     border-color: var(--colors-secondary) !important;
 }
-.btn.btn-secondary:hover,
-.button--secondary:hover,
-.button--default:hover,
-.btn.btn-secondary:focus,
-.button--secondary:focus,
-.button--default:focus {
+#greenid-container .btn.btn-secondary:hover,
+#greenid-container .button--secondary:hover,
+#greenid-container .button--default:hover,
+#greenid-container .btn.btn-secondary:focus,
+#greenid-container .button--secondary:focus,
+#greenid-container .button--default:focus {
     background-color: var(--colors-secondary-hover) !important;
     border-color: var(--colors-secondary-hover) !important;
     color: var(--colors-on-secondary) !important;
 }
-.btn[disabled],
-.btn:disabled {
+#greenid-container .btn[disabled],
+#greenid-container .btn:disabled {
     opacity: 0.5 !important;
     filter: grayscale(20%);
 }
@@ -164,7 +172,8 @@ div[data-jcs-element=identity__document__triple__scan__guidance] h2 * {
 }
 
 /* General spacing adjustments */
-br, p:empty {
+#greenid-container br,
+#greenid-container p:empty {
     display: none;
 }
 #greenid-hosted-powered-by-gbg {
