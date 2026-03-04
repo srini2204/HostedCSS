@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    /* Main text color */
+    --colors-on-surface: #1A1A1A;
+
+    /* For elements on light backgrounds */
+    --colors-on-surface-variant: #3A3A3A;
+
+    /* Background surfaces */
+    --colors-surface: #FFFFFF;
+    --colors-surface-dim: #F7F7F7;
+    --colors-surface-bright: #FFFFFF;
+
+    /* Accent text on colored surfaces */
+    --colors-on-primary: #FFFFFF;
+
+    /* Border colors */
+    --colors-border: #E0E0E0;
+
+    /* Disabled state colors */
+    --colors-disabled: #BDBDBD;
+    --colors-on-disabled: #757575;
+
+    /* Error state colors */
+    --colors-error: #D32F2F;
+    --colors-on-error: #FFFFFF;
+
+    /* Success state colors */
+    --colors-success: #388E3C;
+    --colors-on-success: #FFFFFF;
+
+    /* Warning state colors */
+    --colors-warning: #FBC02D;
+    --colors-on-warning: #000000;
+
+    /* Info state colors */
+    --colors-info: #1976D2;
+    --colors-on-info: #FFFFFF;
+
+    /* Primary button colors */
+    --colors-primary: #001657;             /* main brand color */
+    --colors-primary-hover: #004999;       /* darker hover */
+    --colors-on-primary: #FFFFFF;          /* text color on primary */
+
+    /* Secondary button colors */
+    --colors-secondary: #E6EEF5;           /* light surface color */
+    --colors-secondary-hover: #D8E4ED;     /* slightly darker hover */
+    --colors-on-secondary: #003865;        /* text color on secondary */
+
+    /* Optional tertiary/accent variables if needed later */
+    --colors-accent: #FFCC00;
+    --colors-on-accent: #000000;
+}
+body, body * {
+    color: var(--colors-on-surface) !important;
+    font-family: "Outfit", sans-serif !important;
+}
+
+.glyphicon {
+    font-family: "Glyphicons Halflings" !important;
+}
+
+a {
+    color: var(--colors-primary-hover, #004999) !important;
+}
+a:hover, a:focus {
+    color: var(--colors-primary-hover, #004999) !important;
+}
+
+button.btn-primary, .btn.btn-primary, .button--primary {
+    background-color: var(--colors-primary) !important;
+    color: var(--colors-on-primary) !important;
+    border-color: var(--colors-primary) !important;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus,
+.button--primary:hover,
+.button--primary:focus {
+    background-color: var(--colors-primary-hover) !important;
+    border-color: var(--colors-primary-hover) !important;
+    color: var(--colors-on-primary) !important;
+}
+
+.btn.btn-secondary, .button--secondary {
+    background-color: var(--colors-secondary) !important;
+    color: var(--colors-on-secondary) !important;
+    border-color: var(--colors-secondary) !important;
+}
+
+.btn.btn-secondary:hover,
+.button--secondary:hover,
+.button--default:hover,
+.btn.btn-secondary:focus,
+.button--secondary:focus,
+.button--default:focus {
+    background-color: var(--colors-secondary-hover) !important;
+    border-color: var(--colors-secondary-hover) !important;
+    color: var(--colors-on-secondary) !important;
+}
+
+.btn[disabled],
+.btn:disabled {
+    opacity: 0.5 !important;
+    filter: grayscale(20%);
+}
+
+.notification-orange, .notification-orange * {
+    background-color: var(--colors-warning, #FBC02D) !important;
+    color: var(--colors-on-warning, #000000) !important;
+}
+
+.notification-blue, .notification-blue * {
+    background-color: var(--colors-info, #1976D2) !important;
+    color: var(--colors-on-info, #FFFFFF) !important;
+}
+#webscanRoot, #webscanRoot * {
+    color: var(--colors-on-primary, #FFFFFF);
+}
+
+.provider-container, .provider-container * {
+    color: var(--colors-on-primary, #FFFFFF) !important;
+}
+.dark-inner-provider-container, .dark-inner-provider-container * {
+    color: var(--colors-on-primary, #FFFFFF) !important;
+}
+
+/* Default (desktop/tablet) */
+body {
+    width: 70% !important;
+    margin: 0 auto !important;
+    float: none !important;
+    max-width: 1200px;
+}
+#greenid-hosted-logo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+    background: #001657;
+}
+.greenid-hosted-logo {
+    align-self: flex-start !important;  /* left align */
+}
+
+/* Mobile override */
+@media (max-width: 768px) {
+    body {
+        width: 100% !important;     /* full width on phones */
+        margin: 0 !important;       /* remove auto-centering margins */
+    }
+    .greenid-hosted-logo img{
+        max-width: 50%;
+    }
+}
+
+#greenid-container .input-group-btn button.btn-default {
+    padding: 0px;
+    margin: 0px;
+}
+
+#greenid-container .greenid-bg-white br{
+    display: none;
+}
+p:empty br{
+  display: none;
+}
+#greenid-hosted-powered-by-gbg {
+    margin-top: 0px;
+}
+.greenid-so-content #greenid-container .form-group:first-of-type{
+    margin-top: 0px;
+}
+.greenid-so-content #greenid-container .form-group {
+    margin-bottom: 0px;
+}
+#greenid-biometric-content .greenid-so-content #greenid-container #webscanRoot 
+div[data-jcs-element=identity__document__triple__scan__guidance] h2 {
+    padding-top: 25px;
+    font-size: 25px;
+    color: var(--colors-error, #D32F2F) !important;
+}

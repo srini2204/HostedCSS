@@ -1,11 +1,20 @@
 @import url(https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;1,6..72,300&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap);
 
-/* Force the tab container to behave like a centered block */
+/* Default (desktop/tablet) */
 #tab {
     width: 70% !important;
     margin: 0 auto !important;
     float: none !important;
     max-width: 1200px;
+}
+
+/* Mobile override */
+@media (max-width: 768px) {
+    #tab {
+        width: 100% !important;     /* full width on phones */
+        margin: 0 !important;       /* remove auto-centering margins */
+        padding: 0 15px !important; /* optional: nice side padding */
+    }
 }
 
 #greenid-hosted-logo {
@@ -20,11 +29,6 @@
     align-self: flex-start !important;  /* left align */
 }
 
-.greenid-so-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0;
-}
 #greenid-container .greenid-bg-white br{
     display: none;
 }
@@ -50,11 +54,11 @@ p:empty {
     font-size: 24px;
     line-height: 40px;
 }
-
 .greenid-so-content #greenid-container h1 strong
 {
     font-weight: 500;
 }
+
 .greenid-so-content #greenid-container h2,.greenid-so-content #greenid-container h3,.greenid-so-content #greenid-container h4 {
     font-family: "Roboto", Helvetica, sans-serif;
     line-height: 24px;
@@ -124,6 +128,9 @@ p:empty {
     font-family:  "Roboto", Helvetica, sans-serif;
     margin-top: 10px;
     margin-bottom: 0px;
+}
+.greenid-so-content-agree-label {
+    margin-top: 0px;
 }
 .greenid-so-content #greenid-container .greenid-so-content-nav {
     position: relative;
