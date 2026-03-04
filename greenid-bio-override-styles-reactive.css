@@ -40,9 +40,6 @@ body {
     --colors-surface-dim: #F7F7F7;
     --colors-surface-bright: #FFFFFF;
 
-    /* Accent text on colored surfaces */
-    --colors-on-primary: #FFFFFF;
-
     /* Border colors */
     --colors-border: #E0E0E0;
 
@@ -142,7 +139,6 @@ button.btn-primary, .btn.btn-primary, .button--primary {
 div[data-jcs-element=identity__document__triple__scan__guidance] h2, 
 #greenid-biometric-content .greenid-so-content #greenid-container #webscanRoot 
 div[data-jcs-element=identity__document__triple__scan__guidance] h2 * {
-    padding-top: 25px;
     padding-top: 25px;
     font-size: 25px;
     color: var(--colors-error, #D32F2F) !important;
