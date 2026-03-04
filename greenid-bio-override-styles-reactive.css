@@ -1,5 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* Default (desktop/tablet) */
+body {
+    width: 70% !important;
+    margin: 0 auto !important;
+    float: none !important;
+    max-width: 1200px;
+}
+#greenid-hosted-logo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+    background: #001657;
+}
+.greenid-hosted-logo {
+    align-self: flex-start !important;  /* left align */
+}
+
+/* Mobile override */
+@media (max-width: 768px) {
+    body {
+        width: 100% !important;     /* full width on phones */
+        margin: 0 !important;       /* remove auto-centering margins */
+    }
+    .greenid-hosted-logo img{
+        max-width: 50%;
+    }
+}
+/* Declare branding colors */
 :root {
     /* Main text color */
     --colors-on-surface: #1A1A1A;
@@ -52,28 +80,23 @@
     --colors-accent: #FFCC00;
     --colors-on-accent: #000000;
 }
+
+/* Override default fonts and colors */
 body, body * {
     color: var(--colors-on-surface) !important;
     font-family: "Outfit", sans-serif !important;
 }
-
 .glyphicon {
     font-family: "Glyphicons Halflings" !important;
 }
-
-a {
+a, a:hover, a:focus {
     color: var(--colors-primary-hover, #004999) !important;
 }
-a:hover, a:focus {
-    color: var(--colors-primary-hover, #004999) !important;
-}
-
 button.btn-primary, .btn.btn-primary, .button--primary {
     background-color: var(--colors-primary) !important;
     color: var(--colors-on-primary) !important;
     border-color: var(--colors-primary) !important;
 }
-
 .btn.btn-primary:hover,
 .btn.btn-primary:focus,
 .button--primary:hover,
@@ -82,13 +105,11 @@ button.btn-primary, .btn.btn-primary, .button--primary {
     border-color: var(--colors-primary-hover) !important;
     color: var(--colors-on-primary) !important;
 }
-
 .btn.btn-secondary, .button--secondary {
     background-color: var(--colors-secondary) !important;
     color: var(--colors-on-secondary) !important;
     border-color: var(--colors-secondary) !important;
 }
-
 .btn.btn-secondary:hover,
 .button--secondary:hover,
 .button--default:hover,
@@ -99,74 +120,36 @@ button.btn-primary, .btn.btn-primary, .button--primary {
     border-color: var(--colors-secondary-hover) !important;
     color: var(--colors-on-secondary) !important;
 }
-
 .btn[disabled],
 .btn:disabled {
     opacity: 0.5 !important;
     filter: grayscale(20%);
 }
 
+/* greenId Scan specific overrides */
+.dark-inner-provider-container, .dark-inner-provider-container * {
+    color: var(--colors-on-primary, #FFFFFF) !important;
+}
 .notification-orange, .notification-orange * {
     background-color: var(--colors-warning, #FBC02D) !important;
     color: var(--colors-on-warning, #000000) !important;
 }
-
 .notification-blue, .notification-blue * {
     background-color: var(--colors-info, #1976D2) !important;
     color: var(--colors-on-info, #FFFFFF) !important;
 }
-#webscanRoot, #webscanRoot * {
-    color: var(--colors-on-primary, #FFFFFF);
+#greenid-biometric-content .greenid-so-content #greenid-container #webscanRoot 
+div[data-jcs-element=identity__document__triple__scan__guidance] h2, 
+#greenid-biometric-content .greenid-so-content #greenid-container #webscanRoot 
+div[data-jcs-element=identity__document__triple__scan__guidance] h2 * {
+    padding-top: 25px;
+    padding-top: 25px;
+    font-size: 25px;
+    color: var(--colors-error, #D32F2F) !important;
 }
-
-.provider-container, .provider-container * {
-    color: var(--colors-on-primary, #FFFFFF) !important;
-}
-.dark-inner-provider-container, .dark-inner-provider-container * {
-    color: var(--colors-on-primary, #FFFFFF) !important;
-}
-
-/* Default (desktop/tablet) */
-body {
-    width: 70% !important;
-    margin: 0 auto !important;
-    float: none !important;
-    max-width: 1200px;
-}
-#greenid-hosted-logo {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 24px;
-    background: #001657;
-}
-.greenid-hosted-logo {
-    align-self: flex-start !important;  /* left align */
-}
-
-/* Mobile override */
-@media (max-width: 768px) {
-    body {
-        width: 100% !important;     /* full width on phones */
-        margin: 0 !important;       /* remove auto-centering margins */
-    }
-    .greenid-hosted-logo img{
-        max-width: 50%;
-    }
-}
-
 #greenid-container .input-group-btn button.btn-default {
-    padding: 0px;
+    padding-right: 15px;
     margin: 0px;
-}
-
-#greenid-container .greenid-bg-white br{
-    display: none;
-}
-p:empty br{
-  display: none;
-}
-#greenid-hosted-powered-by-gbg {
-    margin-top: 0px;
 }
 .greenid-so-content #greenid-container .form-group:first-of-type{
     margin-top: 0px;
@@ -174,9 +157,20 @@ p:empty br{
 .greenid-so-content #greenid-container .form-group {
     margin-bottom: 0px;
 }
-#greenid-biometric-content .greenid-so-content #greenid-container #webscanRoot 
-div[data-jcs-element=identity__document__triple__scan__guidance] h2 {
-    padding-top: 25px;
-    font-size: 25px;
-    color: var(--colors-error, #D32F2F) !important;
+#greenid-container .input-group {
+    margin-bottom: 10px;
+}
+.greenid-so-content-agree {
+    margin: 0 auto;
+}
+#greenid-so-confirm-details-button {
+    margin-bottom: 30px;
+}
+
+/* General spacing adjustments */
+br, p:empty {
+    display: none;
+}
+#greenid-hosted-powered-by-gbg {
+    margin-top: 0px;
 }
