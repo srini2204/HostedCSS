@@ -1,45 +1,54 @@
 @import url(https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;1,6..72,300&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap);
 
-body {
-    margin: 7px;
-    /*background: #f2f2f2;*/
+/* Force the tab container to behave like a centered block */
+#tab {
+    width: 70% !important;
+    margin: 0 auto !important;
+    float: none !important;
+    max-width: 1200px;
 }
+
 #greenid-hosted-logo {
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 40px;
     padding: 24px;
+    background: #001657;
 }
-#greenid-hosted-logo img {
-    height: auto !important;
-    width: 80px !important;
+
+.greenid-hosted-logo {
+    align-self: flex-start !important;  /* left align */
 }
+
 .greenid-so-content {
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0;
 }
-
-#greenid-hosted-powered-by-gbg {
-    padding-top: 20px;
-}
-
-#greenid-container #greenid-intro-content h1,
-#greenid-so-content-finish #greenid-container h1,
-.greenid-so-content #greenid-container h1 strong,
-.greenid-so-content #greenid-container h1
-{
-    /*font-family: Newsreader, serif ;*/
-	font-family: "Roboto", Helvetica, sans-serif;
-    color: #ffffff;
-}
-
-#greenid-container #greenid-intro-content h1,
-.greenid-so-content #greenid-container h1 strong,
-.greenid-so-content #greenid-container h1
-{
-    font-size: 48px;
-    line-height: 67px;
+#greenid-container .greenid-bg-white br{
     display: none;
+}
+p:empty {
+  display: none;
+}
+#greenid-hosted-powered-by-gbg {
+    margin-top: 0px;
+}
+.greenid-so-content #greenid-container .form-group:first-of-type{
+    margin-top: 0px;
+}
+.greenid-so-content #greenid-container .form-group {
+    margin-bottom: 0px;
+}
+#greenid-container #greenid-intro-content h1 {
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.greenid-so-content #greenid-container h1 strong,
+.greenid-so-content #greenid-container h1 {
+    font-size: 24px;
+    line-height: 40px;
 }
 
 .greenid-so-content #greenid-container h1 strong
@@ -63,17 +72,14 @@ body {
 	/*line-height: 24px;*/
 
 }
-
 .greenid-so-content #greenid-container strong
 {
     font-weight: 500;
 }
-
 .greenid-so-content #greenid-container .btn
 {
     font-family: "Roboto", Helvetica, sans-serif;
 }
-
 .greenid-so-content #greenid-container .btn-primary:hover,
 .greenid-so-content #greenid-container[data-eq-state~="xsmall"] .btn-primary:hover,
 #greenid-biometric-content .greenid-so-content #greenid-container #webscanRoot .button.button--primary:hover {
@@ -81,17 +87,16 @@ body {
 	background-color: #010034;
     border-color: #010034
 	*/
-	background-color: #5050FF;
+	background-color: #02b5c8;
     border-color: #ffffff;
 	
 }
-
 .greenid-so-content #greenid-container .btn-primary,
 .greenid-so-content #greenid-container[data-eq-state~="xsmall"] .btn-primary,
 #greenid-biometric-content .greenid-so-content #greenid-container #webscanRoot .button.button--primary
 {
     align-items: center;
-    background-color: #5050FF;
+    background-color: #02b5c8;
     border-radius: 5px;
     /*border-style: solid;
     border-width: 1px;*/
@@ -110,55 +115,27 @@ body {
 .greenid-so-content #greenid-container p {
     line-height: 24px;
 }
-
 .greenid-so-content #greenid-container .btn-next {
     background-size: 40px 25px;
 }
-
 .greenid-so-content #greenid-container label
 {
     font-weight: 300;
     font-family:  "Roboto", Helvetica, sans-serif;
+    margin-top: 10px;
     margin-bottom: 0px;
 }
-
 .greenid-so-content #greenid-container .greenid-so-content-nav {
     position: relative;
     min-height: 20px;
-    margin-top: -5px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 0px;
 }
-/*
-.greenid-so-content #greenid-container select, .greenid-so-content #greenid-container .select2-selection {
-    background: #fff !important;
-    border: 1px solid #d9d9d9;
-    border-radius: 5px;
-    height: 45px;
-    padding: 0 10px;
-    font-family: 'Roboto';
-    margin-top: 13px;
-    color: #ffffff;
-    font-size: 1rem;
-    font-weight: 300;
-}
-.greenid-so-content #greenid-container input[type='text'], .greenid-so-content #greenid-container input[type='number'], .greenid-so-content #greenid-container input[type='date'], .greenid-so-content #greenid-container input[type='tel'], .greenid-so-content #greenid-container input[type='email'], .greenid-so-content #greenid-container input[type='password'], .greenid-so-content #greenid-container input[type='datetime'], .greenid-so-content #greenid-container input[type='month'], .greenid-so-content #greenid-container .greenid-form-input-static {
-    background: #fff;
-    border: 1px solid #d9d9d9;
-    border-radius: 5px;
-    height: 45px;
-    padding: 0 10px;
-    font-family: 'Roboto';
-    margin-top: 13px;
-    color: #ffffff;
-    font-size: 1rem;
-    font-weight: 300;
-}
-*/
 #greenid-container #greenid-option-list-toggle {
     background: #fff;
-    border: 1px solid #d9d9d9;
+    border: 1px solid #444b53;
     border-radius: 8px;
     height: 50px;
     padding: 0 10px;
@@ -174,17 +151,15 @@ body {
 #greenid-container .input-group.date input {
     margin-top: 0;
 }
-
 .greenid-so-content #greenid-container .input-group-addon.greenid-datepicker {
     background-color: #fff;
-    border: 1px solid #d9d9d9;
+    border: 1px solid #444b53;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
 }
 .greenid-so-content #greenid-container .greenid-form-input-static, .greenid-so-content #greenid-container .select2-selection__placeholder {
     line-height: 64px;
 }
-
 .greenid-so-content #greenid-container .select2-selection__arrow {
     top: 23px;
 }
@@ -199,7 +174,7 @@ body {
 .greenid-so-content #greenid-container #greenid-source-content {
     padding: 24px;
     border-radius: 8px;
-    border: 1px solid #bfbfbf;
+    border: 1px solid #444b53;
     background-color: #fff !important;
 }
 .greenid-so-content #greenid-container .greenid-modal .btn-default, .greenid-so-content #greenid-container #greenid-source-content #greenid-source-cancel.btn-default {
@@ -213,14 +188,13 @@ body {
     color: #ffffff;
 }
 .greenid-so-content #greenid-container .greenid-modal .btn-default:hover, .greenid-so-content #greenid-container #greenid-source-content #greenid-source-cancel.btn-default:hover {
-    background-color: #5050FF;
+    background-color: #02b5c8;
     border-color: #ffffff;
 }
-
 .well {
     padding: 24px;
     border-radius: 8px;
-    border: 1px solid #bfbfbf;
+    border: 1px solid #444b53;
     background-color: #fff !important;
 }
 #greenid-container .modal-footer .greenid-modal-close {
@@ -240,18 +214,17 @@ body {
 }
 #greenid-container a:hover,
 .greenid-so-content #greenid-container .checkbox label.consent a:hover {
-   color: #164a9a;
+   color: 02b5c8;
    font-weight: 400;
 }
 #greenid-container a {
-  color: #164a9a;
+  color: 02b5c8;
   font-weight: 400;
 }
 #greenid-container a:visited {
-    color: #164a9a;
+    color: 02b5c8;
     font-weight: 400;
 }
-
 #register-form-mode h1 {
   text-indent:-9999px;
 }
@@ -268,7 +241,6 @@ body {
   content:'Verify your age';
   float:left;
 }
-
 /*biometrics page styles*/
 #greenid-biometric-content {
     margin: 10px;
@@ -283,8 +255,7 @@ body {
 #greenid-biometric-content [wsdk-container] .light-inner-provider-container, #greenid-biometric-content [wsdk-container] .dark-inner-provider-container {
     flex-grow: 50;
     min-height: 100%;
-    display: flex
-;
+    display: flex;
     flex-direction: column;
 }
 #greenid-biometric-content [wsdk-container] * {
@@ -295,18 +266,18 @@ body {
     font-weight: 400;
 }
 #greenid-biometric-content [wsdk-container] .control--switch.manual--mode--switch > .control__switch {
-    background-color: #5050FF;
+    background-color: #02b5c8;
     border-color: #ffffff;
 }
 #greenid-biometric-content [wsdk-container] .text-black {
     color: #ffffff; 
 }
 #greenid-biometric-content [wsdk-container] .control--switch.manual--mode--switch > input:checked + .control__switch {
-    background-color: #5050FF;
+    background-color: #02b5c8;
 }
 #greenid-biometric-content [wsdk-container] .help-button-container > svg {
     margin-bottom: 2px;
-    background-color: #5050FF;
+    background-color: #02b5c8;
     border-radius: 14px;
 }
 #greenid-biometric-content [wsdk-container] .control, #greenid-biometric-content [wsdk-container] .control--select {
@@ -333,9 +304,8 @@ body {
     height: 44px;
     padding: 8px;
 }
-
 #greenid-biometric-content .greenid-so-content #greenid-container #webscanRoot .camera-capture--button {
-    border-color: #5050FF;
+    border-color: #02b5c8;
 	border-width: 2px;
     margin: 2px;
     border-style: solid;
@@ -346,7 +316,6 @@ body {
 icon ico-checkmark-16 control__switchIcon text-black {
     color: #ffffff;
 }
-
 #greenid-biometric-content [wsdk-container] .camera-capture--button {
     background-color: #ffffff;
     border-radius: 50%;
@@ -362,7 +331,6 @@ icon ico-checkmark-16 control__switchIcon text-black {
 		width: 100%;
 	}
 }
-
 @media only screen and (min-width: 390px) and (max-width: 430px) {
 	#greenid-hosted-logo {
 		max-width: 1280px;
