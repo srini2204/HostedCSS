@@ -88,7 +88,7 @@ body {
 #greenid-container *,
 #greenid-biometric-content [wsdk-container],
 #greenid-biometric-content [wsdk-container] * {
-    color: var(--colors-on-surface) !important;
+    color: var(--colors-surface) !important;
     font-family: "Optima", sans-serif !important;
 }
 .glyphicon {
@@ -97,7 +97,7 @@ body {
 #greenid-container a,
 #greenid-container a:hover,
 #greenid-container a:focus {
-    color: var(--colors-primary-hover, #004999) !important;
+    color: var(--colors-primary-hover, #c5a948) !important;
 }
 #greenid-container button.btn-primary,
 #greenid-container .btn.btn-primary,
