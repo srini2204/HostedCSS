@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Default (desktop/tablet) */
+body {
+    width: 70% !important;
+    margin: 0 auto !important;
+    float: none !important;
+    max-width: 1200px;
+}
+#greenid-hosted-logo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+    background: #000000;
+}
+.greenid-hosted-logo {
+    align-self: flex-start !important;  /* left align */
+}
+
+/* Mobile override */
+@media (max-width: 768px) {
+    body {
+        width: 100% !important;     /* full width on phones */
+        margin: 0 !important;       /* remove auto-centering margins */
+    }
+    .greenid-hosted-logo img{
+        max-width: 50%;
+    }
+}
+/* Declare branding colors */
+:root {
+    /* Main text color */
+    --colors-on-surface: #1A1A1A;
+
+    /* For elements on light backgrounds */
+    --colors-on-surface-variant: #3A3A3A;
+
+    /* Background surfaces */
+    --colors-surface: #FFFFFF;
+    --colors-surface-dim: #F7F7F7;
+    --colors-surface-bright: #FFFFFF;
+
+    /* Border colors */
+    --colors-border: #E0E0E0;
+
+    /* Disabled state colors */
+    --colors-disabled: #BDBDBD;
+    --colors-on-disabled: #757575;
+
+    /* Error state colors */
+    --colors-error: #D32F2F;
+    --colors-on-error: #FFFFFF;
+
+    /* Success state colors */
+    --colors-success: #388E3C;
+    --colors-on-success: #FFFFFF;
+
+    /* Warning state colors */
+    --colors-warning: #FBC02D;
+    --colors-on-warning: #000000;
+
+    /* Info state colors */
+    --colors-info: #1976D2;
+    --colors-on-info: #FFFFFF;
+
+    /* Primary button colors */
+    --colors-primary: #000000;             /* main brand color */
+    --colors-primary-hover: #004999;       /* darker hover */
+    --colors-on-primary: #FFFFFF;          /* text color on primary */
+
+    /* Secondary button colors */
+    --colors-secondary: #E6EEF5;           /* light surface color */
+    --colors-secondary-hover: #D8E4ED;     /* slightly darker hover */
+    --colors-on-secondary: #003865;        /* text color on secondary */
+
+    /* Optional tertiary/accent variables if needed later */
+    --colors-accent: #FFCC00;
+    --colors-on-accent: #000000;
+}
+
+/* Override default fonts and colors */
+#greenid-container,
+#greenid-container *,
+#greenid-biometric-content [wsdk-container],
+#greenid-biometric-content [wsdk-container] * {
+    color: var(--colors-on-surface) !important;
+    font-family: "Outfit", sans-serif !important;
+}
+.glyphicon {
+    font-family: "Glyphicons Halflings" !important;
+}
+#greenid-container a,
+#greenid-container a:hover,
+#greenid-container a:focus {
+    color: var(--colors-primary-hover, #004999) !important;
+}
+#greenid-container button.btn-primary,
+#greenid-container .btn.btn-primary,
+#greenid-container .button--primary {
+    background-color: var(--colors-primary) !important;
+    color: var(--colors-on-primary) !important;
+    border-color: var(--colors-primary) !important;
+}
+#greenid-container .btn.btn-primary:hover,
+#greenid-container .btn.btn-primary:focus,
+#greenid-container .button--primary:hover,
+#greenid-container .button--primary:focus {
+    background-color: var(--colors-primary-hover) !important;
+    border-color: var(--colors-primary-hover) !important;
+    color: var(--colors-on-primary) !important;
+}
+#greenid-container .btn.btn-secondary,
+#greenid-container .button--secondary {
+    background-color: var(--colors-secondary) !important;
+    color: var(--colors-on-secondary) !important;
+    border-color: var(--colors-secondary) !important;
+}
+#greenid-container .btn.btn-secondary:hover,
+#greenid-container .button--secondary:hover,
+#greenid-container .button--default:hover,
+#greenid-container .btn.btn-secondary:focus,
+#greenid-container .button--secondary:focus,
+#greenid-container .button--default:focus {
+    background-color: var(--colors-secondary-hover) !important;
+    border-color: var(--colors-secondary-hover) !important;
+    color: var(--colors-on-secondary) !important;
+}
+#greenid-container .btn[disabled],
+#greenid-container .btn:disabled {
+    opacity: 0.5 !important;
+    filter: grayscale(20%);
+}
+
+/* greenId Scan specific overrides */
+.dark-inner-provider-container, .dark-inner-provider-container * {
+    color: var(--colors-on-primary, #FFFFFF) !important;
+}
+.notification-orange, .notification-orange * {
+    background-color: var(--colors-warning, #FBC02D) !important;
+    color: var(--colors-on-warning, #000000) !important;
+}
+.notification-blue, .notification-blue * {
+    background-color: var(--colors-info, #1976D2) !important;
+    color: var(--colors-on-info, #FFFFFF) !important;
+}
+#greenid-biometric-content .greenid-so-content #greenid-container #webscanRoot 
+div[data-jcs-element=identity__document__triple__scan__guidance] h2, 
+#greenid-biometric-content .greenid-so-content #greenid-container #webscanRoot 
+div[data-jcs-element=identity__document__triple__scan__guidance] h2 * {
+    padding-top: 25px;
+    font-size: 25px;
+    color: var(--colors-error, #D32F2F) !important;
+}
+#greenid-container .input-group-btn button.btn-default {
+    padding-right: 15px;
+    margin: 0px;
+}
+.greenid-so-content #greenid-container .form-group:first-of-type{
+    margin-top: 0px;
+}
+.greenid-so-content #greenid-container .form-group {
+    margin-bottom: 0px;
+}
+#greenid-container .input-group {
+    margin-bottom: 10px;
+}
+.greenid-so-content-agree {
+    margin: 0 auto;
+}
+#greenid-so-confirm-details-button {
+    margin-bottom: 30px;
+}
+
+/* General spacing adjustments */
+#greenid-container br,
+#greenid-container p:empty {
+    display: none;
+}
+#greenid-hosted-powered-by-gbg {
+    margin-top: 0px;
+}

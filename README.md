@@ -1,17 +1,29 @@
 # HostedCSS
 
-CSS overrides and demo styles for hosted GreenID/presales environments.
+CSS overrides and branding styles for hosted GreenID and presales/demo environments.
 
-## Files
+## Stylesheets
 
-- `greenid-bio-override-styles.css` — Override styles for GreenID bio-related UI elements.
-- `presalesdemoinstance.css` — Demo instance styling used for presales presentations.
+- `greenid-bio-override-styles.css`  
+	Main GreenID hosted override stylesheet. Includes typography, layout spacing, form control, and biometric journey visual overrides.
 
-## Usage
+- `greenid-bio-override-styles-reactive.css`  
+	Reactive-branded variant using `Outfit` typography and color variables, including responsive body/logo behavior.
 
-Apply the appropriate stylesheet in your target hosted instance or include it in the page where these overrides are required.
+- `greenid-bio-override-styles-reactive_harveynormancommercial.css`  
+	Harvey Norman Commercial-specific reactive variant. Similar to the reactive stylesheet, with brand-specific color values (notably darker primary/logo treatment).
 
-## Notes
+- `presalesdemoinstance.css`  
+	Presales/demo environment stylesheet with targeted overrides for consent flow, DOB calendar/input controls, ConnectID, and biometric button/input presentation.
 
-- Keep selectors scoped to avoid unintended global style changes.
-- Test visual changes across target browsers and screen sizes before promotion.
+## How to use
+
+1. Choose the stylesheet that matches the target environment/brand.
+2. Attach it to the hosted page or include it in the environment where GreenID is rendered.
+3. Verify key screens (desktop + mobile) before promoting changes.
+
+## Maintenance notes
+
+- Keep selectors scoped to GreenID containers where possible to avoid global side effects.
+- Prefer updating the nearest matching variant rather than duplicating styles across files.
+- Re-test responsive behavior whenever changing container width, logo, button, or typography rules.
