@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: 'Optima';
+    src: url('https://www.harveynormancommercial.com.au/fonts/Optima.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* Default (desktop/tablet) */
 body {
@@ -65,7 +70,7 @@ body {
 
     /* Primary button colors */
     --colors-primary: #000000;             /* main brand color */
-    --colors-primary-hover: #004999;       /* darker hover */
+    --colors-primary-hover: #d9c8b4;       /* darker hover */
     --colors-on-primary: #FFFFFF;          /* text color on primary */
 
     /* Secondary button colors */
@@ -84,7 +89,7 @@ body {
 #greenid-biometric-content [wsdk-container],
 #greenid-biometric-content [wsdk-container] * {
     color: var(--colors-on-surface) !important;
-    font-family: "Outfit", sans-serif !important;
+    font-family: "Optima", sans-serif !important;
 }
 .glyphicon {
     font-family: "Glyphicons Halflings" !important;
