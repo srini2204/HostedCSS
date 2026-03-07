@@ -5,7 +5,7 @@ body {
     width: 70% !important;
     margin: 0 auto !important;
     float: none !important;
-    font-family: "Outfit", sans-serif;
+    font-family: "Outfit", sans-serif !important;
     max-width: 1200px;
 }
 #greenid-hosted-logo {
