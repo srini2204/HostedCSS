@@ -5,7 +5,6 @@ body {
     width: 70% !important;
     margin: 0 auto !important;
     float: none !important;
-    font-family: "Outfit", sans-serif !important;
     max-width: 1200px;
 }
 #greenid-hosted-logo {
@@ -80,6 +79,9 @@ body {
 }
 
 /* Override default fonts and colors */
+#greenid-div {
+    font-family: "Outfit", sans-serif !important;
+}
 .glyphicon {
     font-family: "Glyphicons Halflings" !important;
 }
