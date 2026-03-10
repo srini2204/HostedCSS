@@ -70,7 +70,7 @@ body {
 
     /* Primary button colors */
     --colors-primary: #000000;             /* main brand color */
-    --colors-primary-hover: #d9c8b4;       /* darker hover */
+    --colors-primary-hover: #c5a948;       /* darker hover */
     --colors-on-primary: #FFFFFF;          /* text color on primary */
 
     /* Secondary button colors */
@@ -84,18 +84,17 @@ body {
 }
 
 /* Override default fonts and colors */
-#greenid-container,
-#greenid-container *,
+#greenid-div,
+#greenid-container, #greenid-container *,
 #greenid-biometric-content [wsdk-container],
 #greenid-biometric-content [wsdk-container] *,
 .greenid-so {
-
-    color: var(--colors-on-surface, #1A1A1A) !important;
     font-family: "Optima", sans-serif !important;
 }
 
 /* Ensure glyphicons render with their required font */
-.glyphicon {
+.glyphicon,
+.glyphicon.glyphicon-remove-circle::before {
   font-family: "Glyphicons Halflings" !important;
   font-style: normal;
   font-weight: normal;
@@ -109,6 +108,7 @@ body {
 #greenid-container a:hover,
 #greenid-container a:focus {
     color: var(--colors-primary-hover, #c5a948) !important;
+    font-weight: bold !important;
 }
 #greenid-container button.btn-primary,
 #greenid-container .btn.btn-primary,
