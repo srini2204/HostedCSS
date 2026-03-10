@@ -93,9 +93,18 @@ body {
     color: var(--colors-surface) !important;
     font-family: "Optima", sans-serif !important;
 }
+
+/* Ensure glyphicons render with their required font */
 .glyphicon {
-    font-family: "Glyphicons Halflings" !important;
+  font-family: "Glyphicons Halflings" !important;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  /* Better rendering across platforms */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
 #greenid-container a,
 #greenid-container a:hover,
 #greenid-container a:focus {
