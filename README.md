@@ -13,6 +13,9 @@ CSS overrides and branding styles for hosted GreenID and presales/demo environme
 - `greenid-bio-override-styles-reactive_harveynormancommercial.css`  
 	Harvey Norman Commercial-specific reactive variant. Similar to the reactive stylesheet, with brand-specific color values (notably darker primary/logo treatment).
 
+- `greenid-bio-override-styles-reactive_trb_tasmania.css`  
+	TRB Tasmania-specific reactive variant. Similar to the reactive stylesheet, with brand-specific color values and Montserrat typography.
+
 - `presalesdemoinstance.css`  
 	Presales/demo environment stylesheet with targeted overrides for consent flow, DOB calendar/input controls, ConnectID, and biometric button/input presentation.
 
