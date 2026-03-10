@@ -79,7 +79,11 @@ body {
 }
 
 /* Override default fonts and colors */
-#greenid-div {
+#greenid-div,
+#greenid-container, #greenid-container *,
+#greenid-biometric-content [wsdk-container],
+#greenid-biometric-content [wsdk-container] *,
+.greenid-so {
     font-family: "Outfit", sans-serif !important;
 }
 .glyphicon {
