@@ -84,7 +84,6 @@ body {
 #greenid-biometric-content [wsdk-container],
 #greenid-biometric-content [wsdk-container] *,
 .greenid-so {
-    color: var(--colors-on-surface) !important;
     font-family: "Outfit", sans-serif !important;
 }
 
