@@ -87,17 +87,6 @@ body {
     font-family: "Outfit", sans-serif !important;
 }
 
-/* Ensure glyphicons render with their required font */
-.glyphicon {
-  font-family: "Glyphicons Halflings" !important;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  /* Better rendering across platforms */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 #greenid-container a,
 #greenid-container a:hover,
 #greenid-container a:focus {
@@ -188,3 +177,23 @@ div[data-jcs-element=identity__document__triple__scan__guidance] h2 * {
 #greenid-hosted-powered-by-gbg {
     margin-top: 0px;
 }
+/* Ensure glyphicons render with their required font */
+.glyphicon.glyphicon-remove-circle::before {
+    font-family: "Glyphicons Halflings" !important;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    /* Better rendering across platforms */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .glyphicon-calendar:before {
+    font-family: "Glyphicons Halflings" !important;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    /* Better rendering across platforms */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
