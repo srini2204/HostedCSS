@@ -23,8 +23,14 @@ body {
         width: 100% !important;     /* full width on phones */
         margin: 0 !important;       /* remove auto-centering margins */
     }
-    .greenid-hosted-logo img{
-        max-width: 50%;
+    #greenid-hosted-logo {
+        margin-top: -40px;
+        margin-bottom: -40px;
+        margin-left: -10px;
+        padding-left: 20px;
+    }
+    #greenid-hosted-logo img {
+        max-height: 120px; /* scale down logo on mobile */
     }
 }
 /* Declare branding colors */

@@ -28,7 +28,7 @@ body {
         width: 100% !important;     /* full width on phones */
         margin: 0 !important;       /* remove auto-centering margins */
     }
-    .greenid-hosted-logo img{
+    #greenid-hosted-logo img{
         max-width: 50%;
     }
 }
